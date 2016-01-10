@@ -1,5 +1,5 @@
 ---------------------------
--- Default awesome theme --
+-- Material awesome theme --
 ---------------------------
 
 local awful = require("awful")
@@ -54,8 +54,8 @@ theme.taglist_fg_focus = white
 theme.taglist_bg_focus = m300
 
 -- Display the taglist squares
---theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squarefw.png"
---theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
+theme.taglist_squares_sel   = themedir.."/squarefw.png"
+theme.taglist_squares_unsel = themedir.."/squarew.png"
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
