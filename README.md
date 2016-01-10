@@ -1,2 +1,4 @@
-# awsome-theme-material
-Material theme for Awesomw VM
+# awesome-material-theme
+Material theme for Awesome VM
+
+Requires ttf-roboto
