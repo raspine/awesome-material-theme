@@ -1,4 +1,4 @@
 # awesome-material-theme
 Material theme for Awesome VM
 
-Requires ttf-robotics
+Requires ttf-roboto
