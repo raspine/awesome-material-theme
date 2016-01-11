@@ -93,7 +93,7 @@ theme.titlebar_maximized_button_focus_inactive  = "/usr/share/awesome/themes/def
 theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themedir.."/material2.jpg"
+theme.wallpaper = themedir.."/awesome_material.jpg"
 
 -- {{{ Misc
 theme.awesome_icon           = themedir .. "/awesome-icon.png"
