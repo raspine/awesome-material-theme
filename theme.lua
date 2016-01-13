@@ -25,6 +25,15 @@ local a500 = "#2196F3"
 
 local a2 = "#ffccbc"
 
+-- create a shadow effect for the main wibox by adding a slightly larger one
+-- behind it
+mybgwibox = {}
+for s = 1, screen.count() do
+    -- Create a background wibox
+    mybgwibox[s] = awful.wibox({ position = "top", height = "32", screen = s })
+    mybgwibox[s]:set_bg(m800)
+end
+
 theme.bg_normal     = m500
 theme.bg_focus      = a300
 theme.bg_urgent     = a2
