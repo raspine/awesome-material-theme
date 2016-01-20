@@ -1,5 +1,7 @@
 ---------------------------
 -- Material awesome theme --
+-- Color definitions can be found here:
+-- https://www.google.com/design/spec/style/color.html#color-color-palette
 ---------------------------
 
 local awful = require("awful")
@@ -12,43 +14,48 @@ themedir = awful.util.getdir("config").."/themes/material"
 theme.font          = "ttf-roboto"
 
 local white = "#FFFFFF"
-local m50 = "#EFEBE9"
-local m200 = "#BCAAA4"
-local m300 = "#A1887F"
-local m500 = "#795548"
-local m700 = "#5D4037"
-local m800 = "#4E342E"
 
-local a200 = "#90CAF9"
-local a300 = "#64B5F6"
-local a500 = "#2196F3"
 
-local a2 = "#ffccbc"
+-- Brown
+local br50 = "#EFEBE9"
+local br200 = "#BCAAA4"
+local br300 = "#A1887F"
+local br500 = "#795548"
+local br700 = "#5D4037"
+local br800 = "#4E342E"
+
+-- Blue
+local bl200 = "#90CAF9"
+local bl300 = "#64B5F6"
+local bl500 = "#2196F3"
+
+-- Deep Orange
+local do100 = "#FFCCBC"
 
 -- create a shadow effect for the main wibox by adding a slightly larger one
 -- behind it
 mybgwibox = {}
 for s = 1, screen.count() do
     -- Create a background wibox
-    mybgwibox[s] = awful.wibox({ position = "top", height = "32", screen = s })
-    mybgwibox[s]:set_bg(m800)
+    mybgwibox[s] = awful.wibox({ position = "top", height = "30", screen = s })
+    mybgwibox[s]:set_bg(br800)
 end
 
-theme.bg_normal     = m500
-theme.bg_focus      = a300
-theme.bg_urgent     = a2
-theme.bg_minimize   = m800
+theme.bg_normal     = br500
+theme.bg_focus      = bl300
+theme.bg_urgent     = do100
+theme.bg_minimize   = br800
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = m50
+theme.fg_normal     = br50
 theme.fg_focus      = white
 theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = m300
+theme.fg_minimize   = br300
 
 theme.border_width  = 2
-theme.border_normal = m500
-theme.border_focus  = a300
-theme.border_marked = a500
+theme.border_normal = br500
+theme.border_focus  = bl300
+theme.border_marked = bl500
 
 -- There are other variable sets
 -- overriding the default one when
@@ -60,7 +67,7 @@ theme.border_marked = a500
 -- mouse_finder_[color|timeout|animate_timeout|radius|factor]
 -- Example:
 theme.taglist_fg_focus = white
-theme.taglist_bg_focus = m300
+theme.taglist_bg_focus = br300
 
 -- Display the taglist squares
 theme.taglist_squares_sel   = themedir.."/squarefw.png"
@@ -77,6 +84,8 @@ theme.menu_width  = 100
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
+theme.widget_fg = br800
+theme.widget_bg = br300
 
 -- Define the image to load
 theme.titlebar_close_button_normal = "/usr/share/awesome/themes/default/titlebar/close_normal.png"
@@ -105,7 +114,9 @@ theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/defau
 theme.wallpaper = themedir.."/awesome_material.png"
 
 -- {{{ Misc
-theme.awesome_icon           = themedir .. "/awesome-icon.png"
+theme.awesome_icon = themedir .. "/awesome-icon.png"
+theme.netdown_icon = themedir .. "/icons/net_down.png"
+theme.netup_icon = themedir .. "/icons/net_up.png"
 --theme.menu_submenu_icon      = sharedthemes .. "/default/submenu.png"
 --theme.tasklist_floating_icon = sharedthemes .. "/default/tasklist/floatingw.png"
 -- }}}
