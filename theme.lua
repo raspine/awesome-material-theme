@@ -29,6 +29,10 @@ local bl200 = "#90CAF9"
 local bl300 = "#64B5F6"
 local bl500 = "#2196F3"
 
+-- Blue Grey
+local bg50 = "#ECEFF1"
+local bg500 = "#607D8B"
+
 -- Deep Orange
 local do100 = "#FFCCBC"
 
@@ -84,8 +88,8 @@ theme.menu_width  = 100
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
-theme.widget_fg = br800
-theme.widget_bg = br300
+theme.widget_fg = bg50
+theme.widget_bg = bg500
 
 -- Define the image to load
 theme.titlebar_close_button_normal = "/usr/share/awesome/themes/default/titlebar/close_normal.png"
